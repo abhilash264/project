@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    body{background-image: url('https://i.pinimg.com/736x/7d/69/88/7d69881f5746960ebdd7d56f6f4adc6d.jpg');}
+ .divhalf{background-image:url(https://previews.123rf.com/images/nexusby/nexusby1408/nexusby140800037/30901869-seamless-pattern-fitness-blue-icons.jpg);  
+ border: 5px solid green;
+ outline-style: dotted;
+ outline-color: orange;
+text-align: center;}
+
+ .divone{background-image:url(https://media.istockphoto.com/vectors/dreamy-tender-gradient-wallpaper-with-mandala-pattern-vector-for-vector-id1169791465?b=1&k=20&m=1169791465&s=612x612&w=0&h=k7uMzNhqI7Pi_nbDzNAhnJ6PKZsCd0qdjUrKNhKavvw=);  
+ border: 5px solid yellow;
+ outline-style: dotted;
+ outline-color: orange;
+text-align: center;}
+.divtwo{background-image:url(https://img.wallpapersafari.com/desktop/1600/900/69/82/tRkPy6.jpg);  
+ border: 5px solid yellow;
+ outline-style: dotted;
+ outline-color: orange;
+text-align: center;}
+.divthree{background-image:url(https://thumbs.dreamstime.com/b/silhouette-girl-practicing-yoga-blue-mountains-background-silhouette-girl-practicing-yoga-blue-mountains-background-197893006.jpg);  
+ border: 5px solid yellow;
+ outline-style: dotted;
+ outline-color: orange;
+text-align: center;
+}
+.animated-text {
+        font-family: Impact;
+        background-image: url("https://tse2.mm.bing.net/th?id=OIP.gU0f2L9JBAPHV46tcX6i3QHaEK&pid=Api&P=0");
+        background-size: 100% 50px;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        -webkit-animation: stripes 2s linear infinite;
+        animation: stripes 2s linear infinite;
+        font-size: 200px;
+        text-decoration: dashed;
+      }
+      @-webkit-keyframes stripes {
+        100% {
+          background-position: 0 -50px;
+        }
+      }
+      .sign {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 50%;
+  background-image: radial-gradient(
+    ellipse 50% 35% at 50% 50%,
+    #6b1839,
+    transparent
+  );
+  transform: translate(-50%, -50%);
+  letter-spacing: 2;
+  left: 50%;
+  top: 50%;
+  font-family: "Clip";
+  text-transform: uppercase;
+  font-size: 6em;
+  color: #ffe6ff;
+  text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+    -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+    0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+  animation: shine 2s forwards, flicker 3s infinite;
+}
+
+@keyframes blink {
+  0%,
+  22%,
+  36%,
+  75% {
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+      -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+      0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+  }
+  28%,
+  33% {
+    color: #ff65bd;
+    text-shadow: none;
+  }
+  82%,
+  97% {
+    color: #ff2483;
+    text-shadow: none;
+  }
+}
+
+.flicker {
+  animation: shine 2s forwards, blink 3s 2s infinite;
+}
+
+.fast-flicker {
+  animation: shine 2s forwards, blink 10s 1s infinite;
+}
+
+@keyframes shine {
+  0% {
+    color: #6b1839;
+    text-shadow: none;
+  }
+  100% {
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+      -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+      0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+  }
+}
+
+@keyframes flicker {
+  from {
+    opacity: 1;
+  }
+
+  4% {
+    opacity: 0.9;
+  }
+
+  6% {
+    opacity: 0.85;
+  }
+
+  8% {
+    opacity: 0.95;
+  }
+
+  10% {
+    opacity: 0.9;
+  }
+
+  11% {
+    opacity: 0.922;
+  }
+
+  12% {
+    opacity: 0.9;
+  }
+
+  14% {
+    opacity: 0.95;
+  }
+
+  16% {
+    opacity: 0.98;
+  }
+
+  17% {
+    opacity: 0.9;
+  }
+
+  19% {
+    opacity: 0.93;
+  }
+
+  20% {
+    opacity: 0.99;
+  }
+
+  24% {
+    opacity: 1;
+  }
+
+  26% {
+    opacity: 0.94;
+  }
+
+  28% {
+    opacity: 0.98;
+  }
+
+  37% {
+    opacity: 0.93;
+  }
+
+  38% {
+    opacity: 0.5;
+  }
+
+  39% {
+    opacity: 0.96;
+  }
+
+  42% {
+    opacity: 1;
+  }
+
+  44% {
+    opacity: 0.97;
+  }
+
+  46% {
+    opacity: 0.94;
+  }
+
+  56% {
+    opacity: 0.9;
+  }
+
+  58% {
+    opacity: 0.9;
+  }
+
+  60% {
+    opacity: 0.99;
+  }
+
+  68% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 0.9;
+  }
+
+  72% {
+    opacity: 0.95;
+  }
+
+  93% {
+    opacity: 0.93;
+  }
+
+  95% {
+    opacity: 0.95;
+  }
+
+  97% {
+    opacity: 0.93;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+
+  </style>
+</head>
+<body>
+</body>
+<div class="animated-text">
+  <h1 style="text-align: center;font-size:75px;">TRUSTED APPS AND WEBSITES FOR EXERCISE</h1>
+</div>
+<div class="divhalf">
+  <h1>BENIFITS OF EXERCISE</h1>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/yTL_bNvXJ9s?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <div style="text-align: left; font-size: large;">
+<b> <ul>
+<li>Improve your memory and brain function (all age groups).</li>
+<li>Protect against many chronic diseases.</li>
+<li>Aid in weight management.</li>
+<li>Lower blood pressure and improve heart health.</li>
+<li>Improve your quality of sleep.</li>
+<li>Reduce feelings of anxiety and depression.</li>
+<li>Combat cancer-related fatigue.</li>
+<li>Improve joint pain and stiffness.</li>
+<li>Maintain muscle strength and balance.</li>
+<li>Increase life span.</li>
+</ul> </b>
+</div>
+</div>
+<br>
+
+<div class="divone">
+  <h1>DAILY EXERCISE FOR FITNESS</h1>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5m6qpyeDrqI?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<br>
+ <div class="container">
+ <div class="alert alert-warning">
+ <p style="text-align: center;font-family: cursive;font-size:30px;color: rgb(228, 16, 239);"><strong>APP FOR DAILY EXERCISE..</strong><a href="https://play.google.com/store/apps/details?id=homeworkout.homeworkouts.noequipment"target='_blank'
+class="alert-link"><i style="text-decoration: underline">click here</i></a></p>
+ </div>
+</div>
+
+
+<br>
+<div class="divtwo">
+  <h1>EXERCISE FOR WEIGHT LOSS</h1>
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/_Lgx9-KZUEc?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+</div>
+<br>
+<div class="container">
+ <div class="alert alert-success">
+ <p style="text-align: center;font-family: cursive;font-size:30px;color:#0aa6e9"><strong>APP FOR EXERCISE FOR WEIGHT LOSS..</strong><a href="https://play.google.com/store/apps/details?id=menloseweight.loseweightappformen.weightlossformen"target='_blank'
+class="alert-link"><i style="text-decoration: underline">click here</i></a></p>
+ </div>
+</div>
+
+
+<br>
+<div class="divthree">
+  <h1>BENIFITS OF EXERCISE FOR WOMEN</h1>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/svakquLZQ1o?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<br>
+<div class="container">
+ <div class="alert alert-danger">
+ <p style="text-align: center;font-family: cursive;font-size:30px;color: rgb(255, 136, 0);"><strong>EXERCISE FOR WOMEN FITNESS ...</strong><a href="https://play.google.com/store/apps/details?id=women.workout.female.fitness&hl=en"target='_blank'
+class="alert-link"><i style="text-decoration: underline">click here</i></a></p>
+ </div>
+</div>
+</body></html>
